@@ -1,11 +1,6 @@
 import pandas as pd
-from dash import Dash, html, dcc, callback, Output, Input
+from dash import Dash, html
 import dash_bootstrap_components as dbc
-import plotly.express as px
-
-# Import data
-data_source = 'https://raw.githubusercontent.com/plotly/datasets/master/gapminder_unfiltered.csv'
-df = pd.read_csv(data_source)
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 
